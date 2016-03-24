@@ -17,18 +17,20 @@ public class listaExemplo {
             
         c = new Conta();
     
-        System.out.println("Digite o nome: ");
+        System.out.print("Digite o nome: ");
         c.setNome(sc.nextLine());
         
-        System.out.println("Numero da Conta: ");
+        System.out.print("Numero da Conta: ");
         c.setConta(sc.nextInt());
         
-        System.out.println("Depositar: ");
+        System.out.print("Depositar: ");
         c.depositar(sc.nextDouble());
         
+        System.out.print("------------------------------\n\n");
+       
         lista.add(c);
         
-        
+        sc.nextLine();//limpar buffer
         }
     
         Iterator item = lista.iterator();
